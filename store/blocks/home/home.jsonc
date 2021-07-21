@@ -6,11 +6,13 @@
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
+      "rich-text#shelf-home-1",
+      "flex-layout.row#shelf-home-1",
+      "rich-text#shelf-home-2",
+      "flex-layout.row#shelf-home-2",
       "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
+      "rich-text#shelf-home-3",
+      "flex-layout.row#shelf-home-3",
       "newsletter"
     ]
   },
@@ -18,7 +20,7 @@
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],
     "props": {
-      "height": 720,
+      "height": 400,
       "images": [
         {
           "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
@@ -44,13 +46,13 @@
     }
   },
 
-  "rich-text#shelf-title": {
+  "rich-text#shelf-home-1": {
     "props": {
-      "text": "## Summer",
+      "text": "## Lançamentos",
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf": {
+  "flex-layout.row#shelf-home-1": {
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
@@ -72,6 +74,24 @@
       "blockClass": "shelf"
     }
   },
+  "rich-text#shelf-home-2": {
+    "props": {
+      "text": "## Destaques",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf-home-2": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "rich-text#shelf-home-3": {
+    "props": {
+      "text": "## Promoções",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf-home-3": {
+    "children": ["list-context.product-list#demo1"]
+  },
 
   "info-card#home": {
     "props": {
@@ -84,20 +104,6 @@
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
       "textAlignment": "center"
-    }
-  },
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
     }
   }
 }
