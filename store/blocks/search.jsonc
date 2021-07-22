@@ -64,6 +64,7 @@
     "children": [
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
+      "flex-layout.row#bannerdpto",
       "flex-layout.row#result"
     ],
     "props": {
@@ -81,6 +82,20 @@
   },
   "flex-layout.row#searchtitle": {
     "children": ["search-title.v2"]
+  },
+  "flex-layout.row#bannerdpto":{
+    "children": ["image#banner-dpto"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "image#banner-dpto": {
+    "props": {
+      "src": "",
+      "maxHeight": "",
+      "maxWidth": ""
+    }
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],
