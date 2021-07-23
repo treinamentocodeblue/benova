@@ -121,7 +121,12 @@
     "props": {
       "marginBottom": 3
     },
-    "children": ["vtex.store-components:product-name"]
+    "children": ["vtex.store-components:product-name#teste"]
+  },
+  "vtex.store-components:product-name#teste":{
+    "props":{
+      "blockClass":"teste"
+    }
   },
 
   "sku-selector": {
